@@ -255,6 +255,11 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  .navbar{
+    position: relative;
+    width: auto;
+    margin: auto;
+  }
   .navbar li {
     float: none;
   }
@@ -266,7 +271,6 @@ footer {
   }
   .navmenu{
     display: block;
-
   }
   .navbar a {
     float: none;
