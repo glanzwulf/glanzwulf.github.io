@@ -234,3 +234,22 @@ footer {
   background-color: DarkSalmon;
   color: white;
 }
+
+/*----------------------- RESPONSIVE ELEMENTS  --------------------------*/
+
+@media only screen and (max-width: 900px) {
+  .royal-family {
+    display: block;
+  }
+  .family-members {
+    display: block;
+  }
+  .member .member-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    z-index: 0;
+  }
+}
