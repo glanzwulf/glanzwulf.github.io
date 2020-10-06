@@ -253,3 +253,24 @@ footer {
     z-index: 0;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .navbar li {
+    float: none;
+  }
+  .navbar ul {
+    float: none
+  }
+  .navbar img {
+    display: none;
+  }
+  .navmenu{
+    display: block;
+
+  }
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
