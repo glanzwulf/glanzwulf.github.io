@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="booknow.css">
+    <title>Book Now</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <a href="index.html"><img src="https://i.imgur.com/eDqkPeF.jpg" alt="logo" style="height: 70px; width: 70px;" /></a>
+        </div>
+        <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="click" />
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="testimonial.html">Testimonials</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-left">
+                <img class="booking-chef" src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=650&q=80" alt="">
+            </div>
+            <div class="col-right">
+                <div class="booking-info">
+                    <h5>Welcome to Wild Code Bar</h5>
+                    <h1>Make a Reservation</h1>
+                    <p>Tuesday to Sunday <strong>12:00 to 15:00 / 19:00 to 23:00</strong></p>
+                    <h3>+351 212 345 678</h3>
+                </div>
+                <div class="line"></div>
+                <div class="booking-form">
+                    <h1>Book a table</h1>
+                    <form class="my-form" action="" onsubmit="return false">
+                        <div class="form-box">
+                            <div class="left-input">
+                                <div class="input-box">
+                                    <label for="">Your name</label>
+                                    <input type="text" placeholder="Full name" name="name" id="form-name" data-error="Subject field is required" required="">
+                                </div>
+                                <div class="input-box">
+                                <label>Time</label>
+                                <div class="timeinput">
+                                    <input type="text" placeholder="30/01/2021" name="datepicker" id="date-picker" data-error="Subject field is required" required="">
+                                    <input type="text" placeholder="20:00" name="timepicker" id="time-picker" data-error="Subject field is required" required="">
+                                </div>
+                            </div>
+                            </div>
+                            <div class="right-input">
+                                <div class="input-box">
+                                    <label>Phone number</label>
+                                    <input type="text" placeholder="Your phone" name="phone" id="form-phone" data-error="Subject field is required" required="">
+                                </div>
+                                <div class="input-box">
+                                    <label>Seats</label>
+                                    <input type="text" placeholder="6 persons" name="date" id="form-date" data-error="Subject field is required" required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-input-box">
+                            <button type="submit" class="book-now-btn" id="submitBtn">Find a table</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bookSuccess" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="https://i.imgur.com/Q66RVy0.png" alt="success icon" style="width: 50px;">
+          <h1>SUCCESS</h1>
+          <h3>Thank you for your booking.</h3>
+          <h5>See you soon.</h5>
+        </div>
+      </div>
+      <script src="book.js"></script>
+</body>
+</html>
